@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  retailer_name: MyString
+  coupon_code: MyString
+  customer_id: MyString
+  customer_username: MyString
+  tweet_text: MyString
+  retweet_count: 1
+  favourite_count: 1
+
+two:
+  retailer_name: MyString
+  coupon_code: MyString
+  customer_id: MyString
+  customer_username: MyString
+  tweet_text: MyString
+  retweet_count: 1
+  favourite_count: 1

@@ -1,0 +1,34 @@
+<script>
+	function refresh() {
+	 window.location.reload(true);
+	}
+
+	setTimeout(refresh, 300000);
+</script>	
+
+<h1>Tweets</h1>
+<h1> Number of Tweets : <%= @tweets.size %></h1>
+<table>
+	<th>Tweet ID</th>
+	<th>Contact ID</th>
+	<th>Contact Username</th>
+	<th>Referral Link</th>
+	<th>Retailer Name</th>
+	<th>Coupon Code</th>
+	<th>Tetweet Count</th>
+	<th>Tetweet Timestamp</th>
+<% @tweets.each do |t| %>
+	<tr>
+		<td><%= t.tweet_id %></td>
+		<td><%= t.contact_id %></td>
+		<td><%= t.contact_username %></td>
+		<td><%= t.referral_link %></td>
+		<td><%= t.retailer_name %></td>
+		<td><%= t.coupon_code %></td>
+		<td><%= t.retweet_count %></td>
+		<td><%= t.tweet_timestamp %></td>
+	</tr>
+<% end %>
+</table>
+
+

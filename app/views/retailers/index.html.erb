@@ -1,0 +1,25 @@
+<script>
+    function refresh() {
+        window.location.reload(true);
+    }
+    setTimeout(refresh, 300000);
+</script>
+
+<h1>Retailers</h1>
+<p>Find me in app/views/contacts/index.html.erb</p>
+<table>
+	<th>Retailer Name</th>
+	<th>Contact ID</th>
+	<th>Contact Username</th>
+	<th>Retweet Count</th>
+	<th>Favourite Count</th>
+<% @retailers.order('retailer_name').each do |r| %>
+	<tr>
+		<td><%= r.retailer_name %></td>
+		<td><%= r.contact_id %></td>
+		<td><%= r.contact_username %></td>
+		<td><%= r.retweet_count %></td>
+		<td><%= r.favourite_count %></td>
+	</tr>
+<% end %>
+</table>

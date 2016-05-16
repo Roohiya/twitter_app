@@ -1,0 +1,26 @@
+<script>
+    function refresh() {
+        window.location.reload(true);
+    }
+    setTimeout(refresh, 300000);
+</script>
+
+<h1>Contacts#index</h1>
+<p>Find me in app/views/contacts/index.html.erb</p>
+<h1> Number of Contacts : <%= @contacts.size %></h1>
+<table>
+	<th>Customer ID</th>
+	<th>Customer Name</th>
+	<th>Coupon Code</th>
+	<th>Retweet Count</th>
+	<th>Retailer Name</th>
+<% @contacts.each do |c| %>
+	<tr>
+		<td><%= c.contact_id %></td>
+		<td><%= c.contact_username %></td>
+		<td><%= c.coupon_code %></td>
+		<td><%= c.retweet_count %></td>
+		<td><%= c.retailer_name %></td>
+	</tr>
+<% end %>
+</table>

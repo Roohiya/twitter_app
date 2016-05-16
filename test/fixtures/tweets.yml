@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tweet_id: 1.5
+  tweet_text: MyString
+  contact_id: 1.5
+  contact_username: MyString
+  referral_link: MyString
+  retailer_name: MyString
+  coupon_code: MyString
+  tweet_timestamp: 2016-05-14 23:16:33
+  retweet_count: 1
+
+two:
+  tweet_id: 1.5
+  tweet_text: MyString
+  contact_id: 1.5
+  contact_username: MyString
+  referral_link: MyString
+  retailer_name: MyString
+  coupon_code: MyString
+  tweet_timestamp: 2016-05-14 23:16:33
+  retweet_count: 1
